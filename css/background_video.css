@@ -1,0 +1,29 @@
+/* ===== BACKGROUND VIDEO ===== */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -10;
+    /* Sabse piche */
+}
+
+.bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Video stretch nahi hogi */
+    filter: brightness(0.35);
+    /* Dark tone for better text contrast */
+}
+
+.video-background .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    /* Thoda aur dim look */
+    backdrop-filter: blur(4px);
+    /* Light blur effect */
+}

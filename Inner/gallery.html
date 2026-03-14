@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Gallery | Anuttaram 3.0</title>
+
+    <!-- Tailwind (optional, you already used it) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts & Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Modular CSS -->
+    <link rel="stylesheet" href="../css/background_video.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/mobile-nav.css" />
+    <link rel="stylesheet" href="../css/countdown-timer.css" />
+    <link rel="stylesheet" href="../css/gallery.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+  </head>
+
+  <body class="text-gray-200">
+    <!-- ===== BACKGROUND VIDEO ===== -->
+    <div class="video-background">
+      <video autoplay muted loop playsinline class="bg-video">
+        <source src="../background_video.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="overlay"></div>
+    </div>
+    <!-- ===== Navigation ===== -->
+    <nav class="anu-nav" role="navigation" aria-label="Main navigation">
+      <div class="anu-brand">
+        <img
+          src="../media/Anu-logo.jpeg"
+          alt="Anuttaram logo"
+          class="anu-brand-img"
+        />
+        <span class="anu-brand-title">Anuttaram 3.0</span>
+      </div>
+
+      <ul class="anu-nav-list" role="menubar">
+        <li role="none">
+          <a role="menuitem" href="../index.html" class="anu-nav-link">Home</a>
+        </li>
+        <li role="none">
+          <a role="menuitem" href="about.html" class="anu-nav-link">About</a>
+        </li>
+        <li role="none">
+          <a role="menuitem" href="events.html" class="anu-nav-link">Events</a>
+        </li>
+        <li role="none">
+          <a role="menuitem" href="schedule.html" class="anu-nav-link"
+            >Schedule</a
+          >
+        </li>
+        <li role="none">
+          <a role="menuitem" href="gallery.html" class="always">Gallery</a>
+        </li>
+        <li role="none">
+          <a role="menuitem" href="contact.html" class="anu-nav-link"
+            >Contact</a
+          >
+        </li>
+        <li role="none">
+          <a role="menuitem" href="rulebook.html" class="anu-nav-link"
+            >Rulebook</a
+          >
+        </li>
+        <li role="none">
+          <a role="menuitem" href="crew.html" class="anu-nav-link">Crew</a>
+        </li>
+
+        <!-- <li role="none"><a role="menuitem" href="https://gecsheohar.ac.in" target="_blank" rel="noopener"
+                    class="anu-nav-link">GEC Sheohar</a></li> -->
+      </ul>
+
+      <div class="anu-nav-right">
+        <div id="countdown-nav" class="anu-countdown-nav" aria-live="polite">
+          Starts in: --
+        </div>
+        <button
+          class="anu-hamburger"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="anu-nav-overlay" aria-hidden="true"></div>
+
+    <!-- Mobile nav (off-canvas) -->
+    <aside id="mobile-nav" class="anu-mobile-nav" aria-hidden="true">
+      <a href="../index.html" class="anu-mobile-link">Home</a>
+      <a href="about.html" class="anu-mobile-link">About</a>
+      <a href="events.html" class="anu-mobile-link">Events</a>
+      <a href="schedule.html" class="anu-mobile-link">Schedule</a>
+      <a href="gallery.html" class="mob-always">Gallery</a>
+      <a href="contact.html" class="anu-mobile-link">Contact</a>
+      <a href="rulebook.html" class="anu-mobile-link">Rulebook</a>
+      <a href="crew.html" class="anu-mobile-link">Crew</a>
+    </aside>
+
+    <!-- ===== Main ===== -->
+    <main class="site-main container mx-auto px-4 md:px-8">
+      <!-- Title & Filters -->
+      <header class="text-center mt-28 mb-6 anu-gallery-header">
+        <h1 class="text-3xl md:text-4xl font-bold text-cyan-400">Gallery</h1>
+        <p class="text-gray-400 mb-4">Snapshots from events</p>
+
+        <div class="flex flex-wrap justify-center gap-3">
+          <button class="anu-gallery-btn anu-gallery-active" data-filter="all">
+            All
+          </button>
+          <button class="anu-gallery-btn" data-filter="cultural">
+            Cultural
+          </button>
+          <button class="anu-gallery-btn" data-filter="technical">
+            Technical
+          </button>
+          <button class="anu-gallery-btn" data-filter="workshops">
+            Workshops
+          </button>
+          <button class="anu-gallery-btn" data-filter="fun">Fun</button>
+        </div>
+      </header>
+      <br />
+
+      <!-- Grid -->
+      <section
+        id="anu-gallery-grid"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 pb-16"
+      >
+        <!-- cultural (5) -->
+        <article class="anu-gallery-item cultural" tabindex="0">
+          <img
+            src="../media/1st.png"
+            alt="Opening Ceremony"
+            loading="lazy"
+          />
+          <div class="caption">Opening Ceremony</div>
+        </article>
+        <article class="anu-gallery-item cultural" tabindex="0">
+          <img
+            src="../media/2nd.png"
+            alt="Dance Performance"
+            loading="lazy"
+          />
+          <div class="caption">Dance Performance</div>
+        </article>
+        <article class="anu-gallery-item cultural" tabindex="0">
+          <img src="../media/3rd.png" alt="Fashion Show" loading="lazy" />
+          <div class="caption">Fashion Show</div>
+        </article>
+        <article class="anu-gallery-item cultural" tabindex="0">
+          <img src="../media/4th.png" alt="Drama Play" loading="lazy" />
+          <div class="caption">Drama Play</div>
+        </article>
+        <article class="anu-gallery-item cultural" tabindex="0">
+          <img src="../media/5th.png" alt="Musical Night" loading="lazy" />
+          <div class="caption">Musical Night</div>
+        </article>
+
+        <!-- technical (5) -->
+        <article class="anu-gallery-item technical" tabindex="0">
+          <img
+            src="../media/6th.png"
+            alt="Hackathon Winners"
+            loading="lazy"
+          />
+          <div class="caption">Hackathon Winners</div>
+        </article>
+        <article class="anu-gallery-item technical" tabindex="0">
+          <img
+            src="../media/college.jpg"
+            alt="Robotics Show"
+            loading="lazy"
+          />
+          <div class="caption">Robotics Show</div>
+        </article>
+        <article class="anu-gallery-item technical" tabindex="0">
+          <img
+            src="../media/events/Workshop (Gen AI).webp"
+            alt="Coding Contest"
+            loading="lazy"
+          />
+          <div class="caption">Coding Contest</div>
+        </article>
+        <article class="anu-gallery-item technical" tabindex="0">
+          <img src="../media/1st.png" alt="Drone Demo" loading="lazy" />
+          <div class="caption">Drone Demo</div>
+        </article>
+        <article class="anu-gallery-item technical" tabindex="0">
+          <img src="../media/2nd.png" alt="AR/VR Lab" loading="lazy" />
+          <div class="caption">AR/VR Lab</div>
+        </article>
+
+        <!-- workshops (5) -->
+        <article class="anu-gallery-item workshops" tabindex="0">
+          <img src="../media/3rd.png" alt="Workshop 1" loading="lazy" />
+          <div class="caption">Workshop 1</div>
+        </article>
+        <article class="anu-gallery-item workshops" tabindex="0">
+          <img src="../media/4th.png" alt="Workshop 2" loading="lazy" />
+          <div class="caption">Workshop 2</div>
+        </article>
+        <article class="anu-gallery-item workshops" tabindex="0">
+          <img src="../media/5th.png" alt="Workshop 3" loading="lazy" />
+          <div class="caption">Workshop 3</div>
+        </article>
+        <article class="anu-gallery-item workshops" tabindex="0">
+          <img src="../media/6th.png" alt="Workshop 4" loading="lazy" />
+          <div class="caption">Workshop 4</div>
+        </article>
+        <article class="anu-gallery-item workshops" tabindex="0">
+          <img src="../media/workshop.jpeg" alt="Workshop 5" loading="lazy" />
+          <div class="caption">Workshop 5</div>
+        </article>
+
+        <!-- fun (5) -->
+        <article class="anu-gallery-item fun" tabindex="0">
+          <img src="../media/technical.jpeg" alt="Fun Games" loading="lazy" />
+          <div class="caption">Fun Games</div>
+        </article>
+        <article class="anu-gallery-item fun" tabindex="0">
+          <img src="../media/fun.jpeg" alt="DJ Night" loading="lazy" />
+          <div class="caption">DJ Night</div>
+        </article>
+        <article class="anu-gallery-item fun" tabindex="0">
+          <img src="../media/events/Blind Coding.png" alt="Flash Mob" loading="lazy" />
+          <div class="caption">Flash Mob</div>
+        </article>
+        <article class="anu-gallery-item fun" tabindex="0">
+          <img src="../media/events/Truss Bridge Competition.webp" alt="Treasure Hunt" loading="lazy" />
+          <div class="caption">Treasure Hunt</div>
+        </article>
+        <article class="anu-gallery-item fun" tabindex="0">
+            <img src="../media/events/e-Gaming.webp" alt="Sports Meet" loading="lazy" />
+            <div class="caption">Sports Meet</div>
+        </article>
+      </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div
+      id="anu-gallery-lightbox"
+      class="gallery-lightbox"
+      aria-hidden="true"
+      role="dialog"
+      aria-label="Image preview"
+    >
+      <button
+        id="anu-gallery-close"
+        class="lightbox-close"
+        aria-label="Close preview"
+      >
+        &times;
+      </button>
+      <button
+        id="anu-gallery-prev"
+        class="lightbox-nav"
+        aria-label="Previous image"
+      >
+        &#10094;
+      </button>
+      <img id="anu-gallery-lightbox-img" src="" alt="" />
+      <button
+        id="anu-gallery-next"
+        class="lightbox-nav"
+        aria-label="Next image"
+      >
+        &#10095;
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-main">
+        <div class="footer-col">
+          <h6>About</h6>
+          <p>
+            We provide quality education and encourage students to participate
+            in sports.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h6>Contacts</h6>
+          <p>
+            Email:
+            <a href="mailto:gecsheohar@gmail.com">gecsheohar@gmail.com</a>
+          </p>
+          <p>Phone: +91-1234567890</p>
+        </div>
+
+        <div class="footer-col">
+          <h6>Find Us On</h6>
+          <div class="social-links">
+            <a href="https://x.com/gecsheohar" target="_blank" rel="noopener"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/share/19nrqgAKTz/"
+              target="_blank"
+              rel="noopener"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/gec_sheohar"
+              target="_blank"
+              rel="noopener"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://in.linkedin.com/in/omkumar00116"
+              target="_blank"
+              rel="noopener"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h6>Location</h6>
+          <p>
+            Government Engineering College Sheohar,<br />
+            Chhatauna Bisunpur, Block- Piprahi, Sheohar,<br />
+            Bihar, Pin Code-843329<br />
+            Mob- 09031085516
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2026 ANUTTARAM 3.0 | Government Engineering College Sheohar — All
+        Rights Reserved.
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/countdown-timer.js"></script>
+    <script src="../js/live-update.js"></script>
+    <script src="../js/mobile-nav.js"></script>
+    <script src="../js/gallery.js"></script>
+  </body>
+</html>

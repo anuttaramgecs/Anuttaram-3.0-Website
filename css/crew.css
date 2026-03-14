@@ -1,0 +1,354 @@
+/* ================= ROOT VARIABLES ================= */
+:root {
+  --bg: #0c1120;
+  --card-bg: #1b2b4d;
+
+  --accent: hsl(187, 43%, 43%);
+  --accent2: #42c6ff;
+
+  --text: #f4f4f4;
+  --muted: #a0a0a0;
+
+  --soft: rgba(255, 255, 255, 0.05);
+
+  --radius: 14px;
+  --avatar-size: 88px;
+
+  --font-family: "Poppins", sans-serif;
+}
+
+/* ================= GLOBAL RESET ================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ================= BODY ================= */
+body {
+  background: black;
+  color: var(--text);
+  padding: 28px;
+  font-family: var(--font-family);
+}
+
+/* ================= CONTAINER ================= */
+.container {
+  max-width: 1500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  background: transparent;
+}
+
+/* =================================================
+                CREW SECTION
+================================================= */
+
+.crew-wrap {
+  border-radius: var(--radius);
+  padding: 26px;
+  background: transparent;
+}
+
+/* Header */
+.crew-header {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.crew-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.crew-sub {
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+/* underline */
+.underline {
+  width: 84px;
+  height: 6px;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  margin: 12px auto 0;
+  border-radius: 6px;
+}
+
+/* =================================================
+                TABS
+================================================= */
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin: 14px 0 20px;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  background: rgba(27, 43, 77, 0.3);
+  color: var(--text);
+
+  font-weight: 600;
+  font-size: 13px;
+
+  cursor: pointer;
+
+  transition: all 0.18s ease;
+}
+
+.tab-btn.active {
+  background: var(--accent);
+  color: #fff;
+
+  box-shadow: 0 10px 28px rgba(255, 109, 30, 0.3);
+  transform: translateY(-2px);
+}
+
+/* =================================================
+                GRID LAYOUT
+================================================= */
+
+.grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+/* =================================================
+                CREW CARD
+================================================= */
+
+.card {
+  background: rgba(27, 43, 77, 0.3);
+  border-radius: var(--radius);
+
+  padding-top: 52px;
+  position: relative;
+
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 220px;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* card top area */
+.card-top {
+  background: rgba(24, 31, 51, 0.5);
+  height: 120px;
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+/* avatar */
+.avatar {
+  position: absolute;
+  top: 56px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+
+  border-radius: 50%;
+  border: 4px solid #fff;
+
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* card body */
+.card-body {
+  padding: 22px 12px 18px;
+  text-align: center;
+  margin-top: 28px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: transparent;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.role {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* =================================================
+            DEVELOPER SECTION
+================================================= */
+
+.devs-wrap {
+  padding: 50px 0;
+  background: transparent;
+  text-align: center;
+}
+
+/* header */
+.section-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--accent);
+  margin-top: 30px;
+}
+
+.section-header p {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.section-header .underline {
+  width: 80px;
+  height: 6px;
+
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  border-radius: 6px;
+
+  margin: 0 auto;
+}
+
+/* developer grid */
+.devs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 28px;
+  margin-top: 30px;
+
+  justify-items: center;
+}
+
+/* =================================================
+            DEVELOPER CARD
+================================================= */
+
+.dev-card {
+  padding: 28px 20px;
+  max-width: 400px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.dev-card:hover {
+  transform: translateY(-6px);
+}
+
+/* avatar */
+.dev-avatar {
+  width: 400px;
+  height: 450px;
+  margin: 0 auto 16px;
+  overflow: hidden;
+}
+
+.dev-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* developer info */
+.dev-info {
+  text-align: center;
+}
+
+.dev-name {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.dev-role {
+  font-size: 20px;
+  color: var(--accent2);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.dev-location {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.dev-bio {
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+/* =================================================
+                SOCIAL LINKS
+================================================= */
+
+.dev-socials {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.dev-socials a {
+  display: flex;
+
+  width: 36px;
+  height: 36px;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background: var(--accent);
+  color: #fff;
+
+  font-size: 16px;
+
+  transition: background 0.2s;
+}
+
+.dev-socials a:hover {
+  background: var(--accent2);
+}

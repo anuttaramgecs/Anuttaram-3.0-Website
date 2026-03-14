@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Crew + Profile Timeline</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--social icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/crew.css" />
+    <link rel="stylesheet" href="../css/background_video.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/mobile-nav.css" />
+    <link rel="stylesheet" href="../css/countdown-timer.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+  </head>
+
+  <body>
+    <!-- ================= BACKGROUND VIDEO ================= -->
+    <div class="video-background">
+      <video autoplay muted loop playsinline class="bg-video">
+        <source src="../background_video.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="overlay"></div>
+    </div>
+
+    <!-- ================= NAVIGATION ================= -->
+    <nav class="anu-nav" role="navigation">
+      <!-- Logo -->
+      <div class="anu-brand">
+        <img
+          src="../media/Anu-logo.jpeg"
+          alt="Anuttaram logo"
+          class="anu-brand-img"
+        />
+        <h1 class="anu-brand-title">Anuttaram 3.0</h1>
+      </div>
+
+      <!-- Desktop Menu -->
+      <ul class="anu-nav-list">
+        <li><a href="../index.html" class="anu-nav-link">Home</a></li>
+        <li><a href="../Inner/about.html" class="anu-nav-link">About</a></li>
+        <li><a href="../Inner/events.html" class="anu-nav-link">Events</a></li>
+        <li>
+          <a href="../Inner/schedule.html" class="anu-nav-link">Schedule</a>
+        </li>
+        <li>
+          <a href="../Inner/gallery.html" class="anu-nav-link">Gallery</a>
+        </li>
+        <li>
+          <a href="../Inner/contact.html" class="anu-nav-link">Contact</a>
+        </li>
+        <li>
+          <a href="../Inner/rulebook.html" class="anu-nav-link">Rulebook</a>
+        </li>
+        <li><a href="#" class="always">Crew</a></li>
+      </ul>
+
+      <!-- Right Section -->
+      <div class="anu-nav-right">
+        <!-- Countdown -->
+        <div class="anu-countdown-nav" id="countdown-nav" aria-live="polite">
+          Starts in: --
+        </div>
+
+        <!-- Hamburger -->
+        <button
+          class="anu-hamburger"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="anu-nav-overlay"></div>
+
+    <!-- ================= MOBILE NAVIGATION ================= -->
+    <div class="anu-mobile-nav">
+      <a href="../index.html" class="anu-mobile-link" data-stagger="1">Home</a>
+      <a href="../Inner/about.html" class="anu-mobile-link" data-stagger="2"
+        >About</a
+      >
+      <a href="../Inner/events.html" class="anu-mobile-link" data-stagger="3"
+        >Events</a
+      >
+      <a href="../Inner/schedule.html" class="anu-mobile-link" data-stagger="4"
+        >Schedule</a
+      >
+      <a href="../Inner/gallery.html" class="anu-mobile-link" data-stagger="5"
+        >Gallery</a
+      >
+      <a href="../Inner/contact.html" class="anu-mobile-link" data-stagger="6"
+        >Contact</a
+      >
+      <a href="../Inner/rulebook.html" class="anu-mobile-link" data-stagger="7"
+        >Rulebook</a
+      >
+      <a href="#" class="mob-always" data-stagger="8">Crew</a>
+    </div>
+
+    <!-- ================= CREW SECTION ================= -->
+    <main class="container">
+      <section class="devs-wrap">
+        <div class="section-header">
+          <h2>Our Crew</h2>
+          <p>
+            Meet the dedicated team behind the creation and success of ANUTTARAM
+            3.0.
+          </p>
+          <div class="underline"></div>
+        </div>
+
+        <!-- Developers Grid -->
+        <div class="devs-grid">
+          <!-- Developer 1 -->
+          <div class="dev-card">
+            <div class="dev-avatar">
+              <img src="../media/om.png" alt="Om Kumar" />
+            </div>
+
+            <div class="dev-info">
+              <h3 class="dev-name">Om Kumar</h3>
+              <p class="dev-role">Website Designer & Developer</p>
+              <p class="dev-location">Sitamarhi, Bihar, India</p>
+
+              <p class="dev-bio">
+                Designed and developed the ANUTTARAM 3.0 website. Passionate
+                about creating modern, user-friendly, and functional web
+                experiences.
+              </p>
+
+              <!-- Social Links -->
+              <div class="dev-socials">
+                <a
+                  href="https://www.facebook.com/share/1Awk36hYcN/"
+                  target="_blank"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="https://x.com/OMKUMAR00116" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+
+                <a
+                  href="https://in.linkedin.com/in/omkumar00116"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <a href="https://github.com/Omkumartiwarii" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Developer 2 -->
+          <div class="dev-card">
+            <div class="dev-avatar">
+              <img src="../media/aniket.png" alt="Aniket Raj" />
+            </div>
+
+            <div class="dev-info">
+              <h3 class="dev-name">Aniket Raj</h3>
+              <p class="dev-role">Content Provider / Creator</p>
+              <p class="dev-location">Muzaffarpur, Bihar, India</p>
+
+              <p class="dev-bio">
+                Contributed content and ideas for the ANUTTARAM 3.0 platform,
+                helping present information clearly and effectively.
+              </p>
+
+              <!-- Social Links -->
+              <div class="dev-socials">
+                <a href="#" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="#" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+
+                <a href="#" target="_blank">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <a href="#" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-main">
+        <div class="footer-col">
+          <h6>About</h6>
+          <p>
+            We provide quality education and encourage students to participate
+            in sports.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h6>Contacts</h6>
+          <p>
+            Email:
+            <a href="mailto:gecsheohar@gmail.com">gecsheohar@gmail.com</a>
+          </p>
+          <p>Phone: +91-1234567890</p>
+        </div>
+
+        <div class="footer-col">
+          <h6>Find Us On</h6>
+
+          <div class="social-links">
+            <a href="https://x.com/gecsheohar" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://www.facebook.com/share/19nrqgAKTz/" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/gec_sheohar" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/government-engineering-college-sheohar-8a27262a8/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h6>Location</h6>
+          <p>
+            Government Engineering College Sheohar<br />
+            Chhatauna Bisunpur, Block- Piprahi<br />
+            Sheohar, Bihar - 843329<br />
+            Mob: 09031085516
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 ANUTTARAM 3.0 | Government Engineering College Sheohar — All
+        Rights Reserved.
+      </div>
+    </footer>
+
+    <!-- ================= SCRIPTS ================= -->
+    <script src="../js/countdown-timer.js"></script>
+    <script src="../js/mobile-nav.js"></script>
+  </body>
+</html>

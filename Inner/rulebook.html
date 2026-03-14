@@ -1,0 +1,754 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anuttaram 3,0 | Events Overview</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/rulebook.css" />
+    <link rel="stylesheet" href="../css/background_video.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/mobile-nav.css" />
+    <link rel="stylesheet" href="../css/countdown-timer.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+  </head>
+
+  <body class="px-6 py-12">
+    <!-- ===== BACKGROUND VIDEO ===== -->
+    <div class="video-background">
+      <video autoplay muted loop playsinline class="bg-video">
+        <source src="../background_video.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="overlay"></div>
+    </div>
+
+    <!-- ===== Navigation ===== -->
+    <nav class="anu-nav">
+      <div class="anu-brand">
+        <img
+          src="../media/Anu-logo.jpeg"
+          alt="Anuttaram logo"
+          class="anu-brand-img"
+        />
+        <h1 class="anu-brand-title">Anuttaram 3.0</h1>
+      </div>
+
+      <!-- Desktop nav -->
+      <ul class="anu-nav-list">
+        <li><a href="../index.html" class="anu-nav-link">Home</a></li>
+        <li><a href="about.html" class="anu-nav-link">About</a></li>
+        <li><a href="events.html" class="anu-nav-link">Events</a></li>
+        <li><a href="schedule.html" class="anu-nav-link">Schedule</a></li>
+        <li><a href="gallery.html" class="anu-nav-link">Gallery</a></li>
+        <li><a href="contact.html" class="anu-nav-link">Contact</a></li>
+        <li><a href="rulebook.html" class="always">Rulebook</a></li>
+        <li><a href="crew.html" class="anu-nav-link">Crew</a></li>
+      </ul>
+
+      <div class="anu-nav-right">
+        <div class="anu-countdown-nav" id="countdown-nav" aria-live="polite">
+          Starts in: --
+        </div>
+        <button
+          class="anu-hamburger"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="anu-nav-overlay"></div>
+
+    <div class="anu-mobile-nav">
+      <a href="../index.html" class="anu-mobile-link" data-stagger="1">Home</a>
+      <a href="about.html" class="anu-mobile-link" data-stagger="2">About</a>
+      <a href="events.html" class="anu-mobile-link" data-stagger="3">Events</a>
+      <a href="schedule.html" class="anu-mobile-link" data-stagger="4"
+        >Schedule</a
+      >
+      <a href="gallery.html" class="anu-mobile-link" data-stagger="5"
+        >Gallery</a
+      >
+      <a href="contact.html" class="anu-mobile-link" data-stagger="6"
+        >Contact</a
+      >
+      <a href="rulebook.html" class="mob-always" data-stagger="6">Rulebook</a>
+      <a href="crew.html" class="anu-mobile-link" data-stagger="7">Crew</a>
+    </div>
+
+    <!-- end mobile nav -->
+    <br /><br /><br />
+
+    <header class="text-center mb-12">
+      <h1 class="orbitron text-5xl md:text-6xl font-bold mb-4 text-white">
+        Anuttaram 3.0 Events
+      </h1>
+      <p class="text-gray-300 max-w-3xl mx-auto">
+        Explore all competitions and view their official rulebooks. Click on
+        "View Rulebook" to read full details.
+      </p>
+    </header>
+
+    <!-- Event Grid -->
+    <section class="event-grid">
+      <!-- Hackathon -->
+      <div class="event-card bg-gradient-1st">
+        <div>
+          <i class="fas fa-palette event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">Rangoli Competition</h2>
+          <p class="mb-4">
+            Create beautiful rangoli designs with creativity and colors.
+          </p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-2nd">
+        <div>
+          <i class="fas fa-spa event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">
+            Yoga Flashcard Challenge
+          </h2>
+          <p class="mb-4">Test your yoga knowledge and demonstrate poses.</p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-3rd">
+        <div>
+          <i class="fas fa-flag event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">Inauguration Ceremony</h2>
+          <p class="mb-4">Official opening ceremony of the fest.</p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-4th">
+        <div>
+          <i class="fas fa-utensils event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">
+            Food Stall & Game Stall
+          </h2>
+          <p class="mb-4">Enjoy delicious food and exciting fun games.</p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-5th">
+        <div>
+          <i class="fas fa-theater-masks event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">Street Play</h2>
+          <p class="mb-4">Perform impactful social messages through drama.</p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-6th">
+        <div>
+          <i class="fas fa-flask event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">Science Fair Project</h2>
+          <p class="mb-4">Showcase innovative science projects and models.</p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-8th">
+        <div>
+          <i class="fas fa-paint-brush event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">Painting Competition</h2>
+          <p class="mb-4">Express creativity through painting and art.</p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-9th">
+        <div>
+          <i class="fas fa-laptop event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">Workshop (MATLAB)</h2>
+          <p class="mb-4">Hands-on workshop to learn MATLAB programming.</p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-10th">
+        <div>
+          <i class="fas fa-drafting-compass event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">Workshop (SolidWorks)</h2>
+          <p class="mb-4">Learn 3D design and modeling using SolidWorks.</p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-11th">
+        <div>
+          <i class="fas fa-code event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">Blind Coding</h2>
+          <p class="mb-4">Test your coding logic without seeing output.</p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-12th">
+        <div>
+          <i class="fas fa-robot event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">Robo Sprint</h2>
+          <p class="mb-4">Race robots on a challenging track.</p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-13th">
+        <div>
+          <i class="fas fa-book-open event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">Story Telling Event</h2>
+          <p class="mb-4">Engage the audience with your storytelling skills.</p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-13th">
+        <div>
+          <i class="fas fa-microphone event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">AN</h2>
+          <p class="mb-4">
+            Participate in this exciting event and showcase your talent.
+          </p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-1st">
+        <div>
+          <i class="fas fa-chalkboard-teacher event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">
+            Symposium (The Beginning)
+          </h2>
+          <p class="mb-4">Present innovative ideas and research topics.</p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-2nd">
+        <div>
+          <i class="fas fa-comments event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">Extempore</h2>
+          <p class="mb-4">
+            Speak instantly on a given topic and show your communication skills.
+          </p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-3rd">
+        <div>
+          <i class="fas fa-comments event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">Extempore</h2>
+          <p class="mb-4">
+            Demonstrate your confidence and speaking ability on random topics.
+          </p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-4th">
+        <div>
+          <i class="fas fa-spell-check event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">Spelling Bee</h2>
+          <p class="mb-4">Test your vocabulary and spelling accuracy.</p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-5th">
+        <div>
+          <i class="fas fa-cube event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">Rubik's Cube Master</h2>
+          <p class="mb-4">Solve the cube in the fastest time possible.</p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-6th">
+        <div>
+          <i class="fas fa-question-circle event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">Quiz</h2>
+          <p class="mb-4">Compete in an exciting knowledge challenge.</p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-7th">
+        <div>
+          <i class="fas fa-poll event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">
+            Science Communication Poster Presentation
+          </h2>
+          <p class="mb-4">
+            Explain scientific concepts creatively using posters.
+          </p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-8th">
+        <div>
+          <i class="fas fa-brain event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">Workshop (Gen AI)</h2>
+          <p class="mb-4">
+            Learn the basics of Generative AI and its applications.
+          </p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-9th">
+        <div>
+          <i class="fas fa-keyboard event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">Key Storm</h2>
+          <p class="mb-4">
+            Typing speed challenge to test your keyboard skills.
+          </p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-10th">
+        <div>
+          <i class="fas fa-bug event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">Ctrl + Fix</h2>
+          <p class="mb-4">Debug and fix coding errors in limited time.</p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-11th">
+        <div>
+          <i class="fas fa-chess event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">Chess / Carrom</h2>
+          <p class="mb-4">Compete in classic indoor board games.</p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-12th">
+        <div>
+          <i class="fas fa-chess-board event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">
+            Chess/Carrom (Faculty/Staff) (Open)
+          </h2>
+          <p class="mb-4">
+            Special indoor game competition for faculty and staff.
+          </p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-13th">
+        <div>
+          <i class="fas fa-gamepad event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">e-Gaming</h2>
+          <p class="mb-4">Compete in exciting digital gaming battles.</p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-1st">
+        <div>
+          <i class="fas fa-map-marked-alt event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">Treasure Hunt</h2>
+          <p class="mb-4">Solve clues and race to find the hidden treasure.</p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-2nd">
+        <div>
+          <i class="fas fa-bullhorn event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">AN</h2>
+          <p class="mb-4">
+            Participate in this engaging event and showcase your abilities.
+          </p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-3rd">
+        <div>
+          <i class="fas fa-music event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">
+            Cultural Activities (Dance/Singing/Ramp Walk)
+          </h2>
+          <p class="mb-4">
+            Showcase your talent through dance, singing, and ramp walk
+            performances.
+          </p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-4th">
+        <div>
+          <i class="fas fa-chess-board event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">Chess/Carrom (Final)</h2>
+          <p class="mb-4">Final round of strategic indoor board games.</p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-5th">
+        <div>
+          <i class="fas fa-theater-masks event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">Cultural Activities</h2>
+          <p class="mb-4">
+            Enjoy creative performances and artistic presentations.
+          </p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-6th">
+        <div>
+          <i class="fas fa-dumbbell event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">
+            Squat Competition & Push-up
+          </h2>
+          <p class="mb-4">
+            Test your strength and endurance in this fitness challenge.
+          </p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-7th">
+        <div>
+          <i class="fas fa-building event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">
+            Straw Tape Tower Challenge
+          </h2>
+          <p class="mb-4">
+            Build the tallest and strongest tower using straws and tape.
+          </p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-8th">
+        <div>
+          <i class="fas fa-rocket event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">
+            Water Rocket Challenge
+          </h2>
+          <p class="mb-4">Design and launch a water-powered rocket.</p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-9th">
+        <div>
+          <i class="fas fa-drafting-compass event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">AutoCAD Design</h2>
+          <p class="mb-4">Create technical designs using AutoCAD software.</p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-10th">
+        <div>
+          <i class="fas fa-ribbon event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">Red Ribbon Seminar</h2>
+          <p class="mb-4">
+            Awareness seminar focused on health and social responsibility.
+          </p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-11th">
+        <div>
+          <i class="fas fa-pen-fancy event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">Slam Poetry</h2>
+          <p class="mb-4">
+            Express emotions and ideas through powerful spoken poetry.
+          </p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+
+      <div class="event-card bg-gradient-13th">
+        <div>
+          <i class="fas fa-award event-icon"></i>
+          <h2 class="orbitron text-xl font-bold mb-2">
+            Facilitation & Closing Ceremony
+          </h2>
+          <p class="mb-4">Celebrating achievements and concluding the fest.</p>
+        </div>
+        <a
+          href="https://drive.google.com/drive/folders/1epoL2tuPqMZRVWdffFIOXdEln0ehnb0J"
+          class="gradient-button inline-block"
+          target="_blank"
+          >View Rulebook</a
+        >
+      </div>
+    </section>
+    <br /><br /><br />
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-main">
+        <div class="footer-col">
+          <h6>About</h6>
+          <p>
+            We provide quality education and encourage students to participate
+            in sports.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h6>Contacts</h6>
+          <p>
+            Email:
+            <a href="mailto:gecsheohar@gmail.com">gecsheohar@gmail.com</a>
+          </p>
+          <p>Phone: +91-1234567890</p>
+        </div>
+
+        <div class="footer-col">
+          <h6>Find Us On</h6>
+          <div class="social-links">
+            <a href="https://x.com/gecsheohar" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://www.facebook.com/share/19nrqgAKTz/" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/gec_sheohar" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://in.linkedin.com/in/omkumar00116" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h6>Location</h6>
+          <p>
+            Government Engineering College Sheohar,<br />
+            Chhatauna Bisunpur, Block- Piprahi, Sheohar,<br />
+            Bihar, Pin Code-843329<br />
+            Mob- 09031085516
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2026 ANUTTARAM 3.0 | Government Engineering College Sheohar — All
+        Rights Reserved.
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/mobile-nav.js"></script>
+    <script src="../js/countdown-timer.js"></script>
+  </body>
+</html>
