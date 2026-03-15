@@ -1,0 +1,185 @@
+/* ===== ANUTTARAM NAV (Upgraded Design) ===== */
+.anu-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px clamp(1rem, 4vw, 4rem);
+  z-index: 2001;
+  background: rgba(10, 15, 25, 0.65);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 12px rgba(0, 180, 255, 0.05);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Subtle nav glow on scroll (optional) */
+.anu-nav.scrolled {
+  background: rgba(10, 15, 25, 0.85);
+  box-shadow: 0 2px 25px rgba(0, 180, 255, 0.12);
+}
+
+/* ===== BRAND ===== */
+.anu-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.anu-brand-img {
+  width: clamp(44px, 4.2vw, 70px);
+  height: clamp(44px, 4.2vw, 70px);
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(0, 180, 255, 0.3);
+  border: 2px solid rgba(0, 180, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.anu-brand-img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 18px rgba(0, 180, 255, 0.55);
+}
+
+.anu-brand-title {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 700;
+  color: #00b4ff;
+  letter-spacing: 1px;
+  font-size: clamp(1rem, 1.8vw, 1.9rem);
+  text-transform: uppercase;
+  text-shadow: 0 0 8px rgba(0, 180, 255, 0.4);
+}
+
+/* ===== NAV LINKS ===== */
+.anu-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+.anu-nav-link {
+  position: relative;
+  text-decoration: none;
+  color: #e9eef6;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.4px;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.anu-nav-link:hover {
+  color: #00b4ff;
+  transform: translateY(-2px);
+}
+
+.anu-nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #00b4ff, #00e0ff);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.anu-nav-link:hover::after {
+  width: 100%;
+}
+
+/* Always-active nav item */
+.always {
+  color: #00b4ff;
+  position: relative;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.always::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #00b4ff, #00e0ff);
+  border-radius: 2px;
+}
+
+/* ===== RIGHT SECTION ===== */
+.anu-nav-right {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* Countdown hide on mobile */
+@media (max-width: 992px) {
+  .anu-countdown-nav {
+    display: none !important;
+  }
+}
+
+/* ===== HAMBURGER BUTTON ===== */
+.anu-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 32px;
+  height: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 3000;
+}
+
+.anu-hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #e9eef6;
+  border-radius: 3px;
+  transition: all 0.35s ease;
+}
+
+.anu-hamburger:hover span {
+  background: #00b4ff;
+  box-shadow: 0 0 8px rgba(0, 180, 255, 0.5);
+}
+
+.anu-hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.anu-hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.anu-hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* ===== RESPONSIVE VISIBILITY ===== */
+@media (max-width: 992px) {
+  .anu-nav-list {
+    display: none !important;
+  }
+  .anu-hamburger {
+    display: flex !important;
+  }
+}
+@media (min-width: 993px) {
+  .anu-hamburger {
+    display: none !important;
+  }
+  .anu-nav-list {
+    display: flex !important;
+  }
+}

@@ -1,0 +1,82 @@
+/* ===== MOBILE NAV OVERLAY ===== */
+.anu-nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 15, 25, 0.85);
+  backdrop-filter: blur(5px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 2000;
+}
+.anu-nav-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ===== MOBILE NAV PANEL ===== */
+.anu-mobile-nav {
+  position: fixed;
+  top: 50%;
+  right: -300px;
+  width: 260px;
+  max-height: 80vh;
+  background: rgba(13, 13, 26, 0.98);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1.5rem;
+  gap: 2rem;
+  transition: right 0.45s ease;
+  z-index: 2001;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  transform: translateY(-50%);
+  overflow-y: auto;
+  box-shadow: 0 0 25px rgba(0, 180, 255, 0.12);
+}
+
+.anu-mobile-nav.open {
+  right: 16px;
+}
+
+.anu-mobile-link {
+  color: #e9eef6;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+.anu-mobile-link[data-shown="1"] {
+  opacity: 1;
+  transform: translateX(0);
+}
+.anu-mobile-link:hover {
+  color: #00b4ff;
+  text-shadow: 0 0 8px rgba(0, 180, 255, 0.6);
+  transform: translateX(4px);
+}
+
+/* Active mobile link */
+.mob-always {
+  color: #00b4ff;
+  text-decoration: none;
+  font-weight: 700;
+  position: relative;
+}
+.mob-always::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #00b4ff, #00e0ff);
+  border-radius: 2px;
+}
