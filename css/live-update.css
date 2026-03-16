@@ -14,11 +14,10 @@
     text-align: center
 }
 
-.live-update .marquee {
-    display: inline-block;
-    white-space: nowrap;
-    will-change: transform;
-    animation: marquee 30s linear infinite;
+.live-update .marquee{
+    display:inline-block;
+    white-space:nowrap;
+    animation:marquee 25s linear infinite;
 }
 
 @keyframes marquee {
